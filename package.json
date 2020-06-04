@@ -10,7 +10,7 @@
     "docs:dev": "npx vuepress dev docs",
     "docs:build": "npx vuepress build docs"
   },
-  "devDependencies": {
+  "dependencies": {
     "vuepress": "^1.5.0"
   }
 }
