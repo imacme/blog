@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - 12
+install:
+  - npm install
+script:
+  - npm run dosc:build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: token_blog
+  local_dir: docs/.vuepress/dist
+  target_branch: gh-pages
+  keep_history: true
+  on:
+    branch: master
