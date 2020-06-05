@@ -8,7 +8,6 @@ script:
 deploy:
   provider: pages
   skip_cleanup: true
-  token: {{ GITHUB_TOKEN }} 
   local_dir: docs/.vuepress/dist
   target_branch: gh-pages
   keep_history: true
