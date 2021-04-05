@@ -1,0 +1,1 @@
+import{o as e,c as t,a as i}from"./app.38c9e000.js";const r='{"title":"请求头","description":"","frontmatter":{},"relativePath":"guide\\\\安全测试\\\\README.md","lastUpdated":1617095058951}',l={},n=i('',2);l.render=function(i,r,l,p,a,o){return e(),t("div",null,[n])};export default l;export{r as __pageData};

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+      linux | VitePress
+    </title>
+    <meta name="description" content="A VitePress site">
+    <link rel="stylesheet" href="/assets/style.56d02f33.css">
+    <link rel="modulepreload" href="/assets/Home.44782e84.js">
+    <link rel="modulepreload" href="/assets/app.38c9e000.js">
+    <link rel="modulepreload" href="/assets/guide_linux_README.md.66e35a58.lean.js">
+    <link rel="modulepreload" href="/assets/app.38c9e000.js">
+    
+    
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme"><header class="nav-bar" data-v-6e7c0b86><div class="sidebar-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z" class></path></svg></div><a class="nav-bar-title" href="/" aria-label="VitePress, back to home" data-v-76c79d52><!----> VitePress</a><div class="flex-grow" data-v-6e7c0b86></div><div class="nav" data-v-6e7c0b86><!----></div><!--[--><!--]--></header><aside class="sidebar" data-v-58e261f2><!----><!--[--><!--]--><ul class="sidebar-links"><!--[--><li class="sidebar-link"><a class="sidebar-link-item" href="#修改时区">修改时区</a><ul class="sidebar-links"><li class="sidebar-link"><a class="sidebar-link-item" href="#dockerfile-时区设置">Dockerfile 时区设置</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#centos">Centos</a><!----></li></ul></li><!--]--></ul><!--[--><!--]--></aside><!-- TODO: make this button accessible --><div class="sidebar-mask"></div><main class="page" data-v-d36a7fda><div class="container" data-v-d36a7fda><!--[--><!--]--><div class="content" data-v-d36a7fda><div><h1 id="linux"><a class="header-anchor" href="#linux" aria-hidden="true">#</a> linux</h1><h2 id="修改时区"><a class="header-anchor" href="#修改时区" aria-hidden="true">#</a> 修改时区</h2><ul><li>/etc/localtime是用来描述本机时间</li><li>/etc/timezone是用来描述本机所属的时区</li><li>timedatectl 命令</li></ul><div class="language-"><pre><code>echo &quot;Asia/shanghai&quot; &gt; /etc/timezone
+cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+</code></pre></div><div class="language-"><pre><code>-- jenkins时需要使用root用户权限
+docker exec -u root -it jenkins /bin/bash
+</code></pre></div><h3 id="dockerfile-时区设置"><a class="header-anchor" href="#dockerfile-时区设置" aria-hidden="true">#</a> Dockerfile 时区设置</h3><div class="language-"><pre><code>RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+RUN echo &#39;Asia/Shanghai&#39; &gt;/etc/timezone
+</code></pre></div><h3 id="centos"><a class="header-anchor" href="#centos" aria-hidden="true">#</a> Centos</h3><ul><li><a href="https://os.51cto.com/art/201004/192805.htm" target="_blank" rel="noopener noreferrer">https://os.51cto.com/art/201004/192805.htm</a></li></ul></div></div><footer class="page-footer" data-v-5a019cc9><div class="edit" data-v-5a019cc9><div class="edit-link" data-v-fb0131f2><!----></div></div><div class="updated" data-v-5a019cc9><!----></div></footer><!----><!--[--><!--]--></div></main></div><!----><!--]--></div>
+    <script>__VP_HASH_MAP__ = JSON.parse("{\"index.md\":\"04fb31c1\",\"guide_linux_readme.md\":\"66e35a58\",\"guide_node版算法实现_1.冒泡排序.md\":\"0e3346b6\",\"guide_node版算法实现_2.选择排序.md\":\"cd4bb423\",\"guide_node版算法实现_3.插入排序.md\":\"b8086fb8\",\"guide_node版算法实现_readme.md\":\"396bb3eb\",\"guide_podman_配置国内镜像.md\":\"6d4ef420\",\"guide_安全测试_readme.md\":\"8b1d1dff\"}")</script>
+    <script type="module" async src="/assets/app.38c9e000.js"></script>
+  </body>
+</html>

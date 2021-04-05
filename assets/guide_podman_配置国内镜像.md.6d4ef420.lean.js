@@ -1,0 +1,1 @@
+import{o as a,c as e,a as r}from"./app.38c9e000.js";const d='{"title":"windows","description":"","frontmatter":{},"relativePath":"guide\\\\podman\\\\配置国内镜像.md","lastUpdated":1616858362680}',i={},n=r('',3);i.render=function(r,d,i,t,h,o){return a(),e("div",null,[n])};export default i;export{d as __pageData};

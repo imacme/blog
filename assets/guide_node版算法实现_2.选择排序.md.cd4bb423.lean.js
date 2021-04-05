@@ -1,0 +1,1 @@
+import{o as r,c as n,a as e}from"./app.38c9e000.js";const t='{"title":"C","description":"","frontmatter":{},"headers":[{"level":2,"title":"算法实现","slug":"算法实现"}],"relativePath":"guide\\\\node版算法实现\\\\2.选择排序.md","lastUpdated":1617446260501}',a={},o=e('',3);a.render=function(e,t,a,d,s,i){return r(),n("div",null,[o])};export default a;export{t as __pageData};
